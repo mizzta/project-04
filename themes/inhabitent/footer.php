@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -10,32 +10,43 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="contact-info">
-		<h6><span>Contact Info</span></h6>
-		<i class="fas fa-envelope">
-			<a href="info@inhabitent.com">info@inhabitent.com</a>
-		</i>
-		<i class="fas fa-phone"><a href="tel:778-456-7891">778-456-7891</a></i>
-		<i class="fab fa-facebook-square"></i>
-		<i class="fab fa-twitter-square"></i>
-		<i class="fab fa-google-plus-square"></i>
-	</div>
+	<div class="company-info">
+		<div class="contact-info">
+			<h3><span>Contact Info</span></h3>
+			<p>
+				<i class="fas fa-envelope"></i>
+				<a href="info@inhabitent.com">info@inhabitent.com</a>
+			</p>
+			<p>
+				<div class="phone">
+					<i class="fas fa-phone"></i>
+					<a href="tel:778-456-7891">778-456-7891</a>
+				</div>
+			</p>
+			<p>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-google-plus-square"></i>
+			</p>
 
-	<div class="business-hour">
-		<h6><span>business hour</span></h6>
-		<p><span>Monday-Friday:</span> 9am to 5pm</p>
-		<p><span>Saturday:</span> 10am to 2pm</p>
-		<p><span>Sunday:</span> Closed</p>
-	</div>
+		</div>
 
-	<div class="footer-logo">
-		<img class="inhabitent-logo-text-dark" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text-dark.svg" />
-	</div><!-- .footer-logo -->
+		<div class="business-hour">
+			<h3><span>business hour</span></h3>
+			<p><span>Monday-Friday:</span> 9am to 5pm</p>
+			<p><span>Saturday:</span> 10am to 2pm</p>
+			<p><span>Sunday:</span> Closed</p>
+		</div><!-- .business-hour -->
 
-	<div class="site-info">
+		<div class="footer-logo">
+			<img class="inhabitent-logo-text-dark" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" />
+		</div><!-- .footer-logo -->
+	</div><!-- .company-info -->
+
+	<div class="copyright">
 		<p><span>copyright &copy; 2019 inhabitent</span></p>
-		<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
-	</div><!-- .site-info -->
+	</div><!-- .copyright -->
+
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
@@ -45,4 +56,3 @@
 </body>
 
 </html>
-
