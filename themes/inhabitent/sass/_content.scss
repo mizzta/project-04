@@ -48,21 +48,30 @@
   display: block;
 }
 
+
+
+
+
 /* header */
 
-.site-header {
+.fixed-header {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  position: fixed;
-
   justify-content: space-between;
+  align-content: center;
   .site-logo {
     width: 50px;
   }
 
   .main-navigation {
 	  display: flex;
-	  justify-content: space-around;
+    justify-content: space-around;
+    a {
+      font-weight: bold;
+    }
+    li {
+      padding-left: 25px;
+    }
   }
 
   .site-description {
