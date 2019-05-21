@@ -751,13 +751,14 @@ footer {
   background: none;
   color: #404040; }
 
-.feature-image {
+.title-meta-background .feature-image {
   position: relative;
   border: 10px solid olive; }
 
-.post-title {
+.title-meta-background .post-title {
   position: absolute;
-  background: aquamarine; }
+  background: #248a83;
+  color: white; }
 
 /*--------------------------------------------------------------
 # Media

@@ -153,6 +153,7 @@ background: none;
 color: $color__text-main;
 }
 
+.title-meta-background {
 .feature-image {
   position: relative;
   border:10px solid olive;
@@ -160,5 +161,7 @@ color: $color__text-main;
 .post-title {
   position: absolute;
   
-  background: aquamarine;
+  background: #248a83;
+  color: white;
+}
 }
