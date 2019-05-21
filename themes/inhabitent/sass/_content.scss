@@ -123,14 +123,14 @@ footer {
 }
 
 // post
-
+//position
 .fullpage {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 
   .content {
-    // background: pink;
+    background: pink;
     max-width: 71%;
     margin-left: auto;
     padding-top: 80px;
@@ -151,4 +151,14 @@ footer {
 .entry-footer {
 background: none;
 color: $color__text-main;
+}
+
+.feature-image {
+  position: relative;
+  border:10px solid olive;
+}
+.post-title {
+  position: absolute;
+  
+  background: aquamarine;
 }

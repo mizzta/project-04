@@ -734,6 +734,7 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row; }
   .fullpage .content {
+    background: pink;
     max-width: 71%;
     margin-left: auto;
     padding-top: 80px;
@@ -749,6 +750,14 @@ footer {
 .entry-footer {
   background: none;
   color: #404040; }
+
+.feature-image {
+  position: relative;
+  border: 10px solid olive; }
+
+.post-title {
+  position: absolute;
+  background: aquamarine; }
 
 /*--------------------------------------------------------------
 # Media
@@ -826,6 +835,7 @@ h2 {
   text-align: center;
   text-transform: uppercase; }
 
+h2
 .entry-title {
   display: none; }
 
