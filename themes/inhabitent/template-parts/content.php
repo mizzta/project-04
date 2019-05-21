@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package Inhabitent_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -24,5 +24,7 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+

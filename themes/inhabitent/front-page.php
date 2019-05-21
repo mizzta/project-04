@@ -30,25 +30,25 @@ get_header(); ?>
 			<h2>latest adventures</h2>
 			<div class="adventures container">
 				<div class="adventures-1">
-					<a href="">
+					<a href="getting-back-to-nature-in-a-canoe">
 						<h3>getting back to nature in a canoe</h3>
 						<button class="read-more">read more</button>
 					</a>
 				</div>
 				<div class="adventures-2">
-					<a href="">
+					<a href="a-night-with-friends-at-the-beach">
 						<h3>a night with friends at the beach</h3>
 						<button class="read-more">read more</button>
 					</a>
 				</div>
 				<div class="adventures-3">
-					<a href="">
+					<a href="taking-in-the-view-at-big-mountain">
 						<h3>talking in the view at big mountain</h3>
 						<button class="read-more">read more</button>
 					</a>
 				</div>
 				<div class="adventures-4">
-					<a href="">
+					<a href="star-gazing-at-the-night-sky">
 						<h3>star-glazing at the night sky</h3>
 						<button class="read-more">read more</button>
 					</a>
