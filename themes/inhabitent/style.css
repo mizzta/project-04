@@ -650,9 +650,13 @@ a {
 .bypostauthor {
   display: block; }
 
-/* header */
-.fixed-header {
-  width: 100vw;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px; }
+
+.site-header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,22 +665,21 @@ a {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 60px; }
-  .fixed-header .site-logo {
+  margin: 0; }
+  .site-header .site-logo {
     width: 50px; }
-  .fixed-header .main-navigation {
+  .site-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .fixed-header .main-navigation a {
+        justify-content: space-around;
+    margin-right: 0; }
+    .site-header .main-navigation a {
       font-weight: bold; }
-    .fixed-header .main-navigation li {
+    .site-header .main-navigation li {
       padding-left: 25px; }
-  .fixed-header .site-description {
+  .site-header .site-description {
     display: none; }
 
 /* footer */
@@ -734,31 +737,17 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row; }
   .fullpage .content {
-    background: pink;
-    max-width: 71%;
+    max-width: 70%;
     margin-left: auto;
     padding-top: 80px;
     padding-left: 35px;
     padding-right: 35px; }
   .fullpage aside {
-    max-width: 22%;
+    max-width: 25%;
     margin-right: auto;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px; }
-
-.entry-footer {
-  background: none;
-  color: #404040; }
-
-.title-meta-background .feature-image {
-  position: relative;
-  border: 10px solid olive; }
-
-.title-meta-background .post-title {
-  position: absolute;
-  background: #248a83;
-  color: white; }
 
 /*--------------------------------------------------------------
 # Media
@@ -836,8 +825,18 @@ h2 {
   text-align: center;
   text-transform: uppercase; }
 
-h2
-.entry-title {
+.post-11 .entry-title {
+  display: none; }
+
+/* header */
+.page-id-5 .hero-image-header {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0; }
+  .page-id-5 .hero-image-header .entry-title {
+    color: #fff; }
+
+.page-id-5 .entry-header .entry-title {
   display: none; }
 
 .banner-image {
@@ -845,13 +844,40 @@ h2
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../.././assets/images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   background-position: center;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
   .banner-image .white-circle-logo {
     position: absolute;
     top: 50%;
     left: 50%; }
+
+.journal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto; }
+  .journal-section .journal-entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px; }
+    .journal-section .journal-entry img {
+      height: 30vh; }
 
 .adventures {
   display: grid;
@@ -914,3 +940,15 @@ h2
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1rem; }
+
+.entry-footer {
+  background: none;
+  color: #404040; }
+
+.title-meta-background .feature-image {
+  position: relative; }
+
+.title-meta-background .post-title {
+  position: absolute;
+  background: #248a83;
+  color: white; }

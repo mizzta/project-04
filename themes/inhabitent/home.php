@@ -7,12 +7,11 @@
 
 get_header(); ?>
 
-
-<!-- <?php the_content(); ?> -->
-
-<!-- -------------------------------------- -->
 <div class="fullpage">
    <div class="content">
+
+<!-- -------------------------------------- -->
+
       <?php if (have_posts()) : ?>
 
          <!-- The wordpress loop -->

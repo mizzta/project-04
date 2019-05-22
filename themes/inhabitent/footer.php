@@ -17,11 +17,9 @@
 				<i class="fas fa-envelope"></i>
 				<a href="info@inhabitent.com">info@inhabitent.com</a>
 			</p>
-			<p>
-				<div class="phone">
+			<p class="phone">
 					<i class="fas fa-phone"></i>
 					<a href="tel:778-456-7891">778-456-7891</a>
-				</div>
 			</p>
 			<p>
 				<i class="fab fa-facebook-square"></i>

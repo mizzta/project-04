@@ -39,10 +39,22 @@ function inhabitent_login_logo() {
 }
 add_action('login_head', 'inhabitent_login_logo');
 
+
 function the_url( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'the_url' );
+
+
+function inhabitent_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
+
 
 
 // function inhabitent_logo_logo_url ($url) {

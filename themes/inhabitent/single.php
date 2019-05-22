@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<div class="fullpage">
+	<div class="content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -28,5 +30,11 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	</div><!-- .content -->
+
+	<aside>
+		<?php get_sidebar(); ?>
+	</aside><!-- .sidebar -->
+</div><!-- .fullpage -->
+
 <?php get_footer(); ?>
