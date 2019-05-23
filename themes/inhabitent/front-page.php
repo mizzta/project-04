@@ -12,47 +12,89 @@ get_header(); ?>
 
 
 
-
+		<!-- banner image -->
 		<section class="banner-image">
-
 			<img class="white-circle-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-full.svg" />
 		</section>
 
-		<section class="shop-stuff container-a">
+		<!-- shop stuff -->
+		<section class="shop-stuff container">
 			<h2>shop stuff</h2>
+			<?php
+			$terms = get_terms(
+				array(
+					'taxonomy' => 'product-type',
+					'hide_empty' => 0,
+				)
+			);
+			?>
+
+			<ul class="product-terms">
+				<?php
+				foreach ($terms as $term) :
+					?>
+
+					<li class="product-term">
+						<img src="<?php echo get_template_directory_uri() .
+										'/assets/images/product-type-icons/' .
+										$term->slug . '.svg'
+									?>" />
+						<p><?php echo $term->description; ?></p>
+						<p>
+							<button href="<?php echo get_term_link($term); ?>">
+								<?php echo $term->name; ?> Stuff
+							</button>
+						</p>
+					</li>
+
+				<?php
+			endforeach;
+			?>
+			</ul> <!-- .products-terms -->
 		</section>
 
+
+
+
+		<!-- inhabitent journal -->
 		<section class="fp-journal">
 			<h2>Inhabitent Journal</h2>
 			<!-- loop with posts -->
-			<div class="journal-section container">		
-			<?php
-			// this will be the get posts loop
-			// use your template tags inside the loop
-			// the_post_thumbnail()
+			<div class="journal-section container">
+				<?php
+				// this will be the get posts loop
+				// use your template tags inside the loop
+				// the_post_thumbnail()
 
-			$args = array('post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3);
-			$journal_posts = get_posts($args); // returns an array of posts
+				$args = array('post_type' => 'post', 'order' => 'DSC', 'posts_per_page' => 3);
+				$journal_posts = get_posts($args); // returns an array of posts
 
-			?>
-			<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
+				?>
+				<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
 
-				<div class="journal-entry">
-				<!-- Post thumbnail -->
-				<?php if ( has_post_thumbnail()); ?>
+					<div class="journal-entry">
+						<!-- Post thumbnail -->
+						<?php if (has_post_thumbnail()); ?>
 
-				<?php the_post_thumbnail('large', $attr) ;?>
-				<p><?php echo get_the_date() ;?> / <?php echo get_comments_number();?> Comments</p>
-				<h3><?php the_title() ;?></h3>
-				<button class="read-entry">READ ENTRY</button>
-				</div>
+						<?php the_post_thumbnail('large', $attr); ?>
+						<p><?php echo get_the_date(); ?> / <?php echo get_comments_number(); ?> Comments</p>
+						<h3><?php the_title(); ?></h3>
+						<button class="read-entry">READ ENTRY</button>
+					</div>
 
-	
-			<?php endforeach;
-		wp_reset_postdata(); ?>
-</div>
+
+				<?php endforeach;
+			wp_reset_postdata(); ?>
+			</div>
 		</section>
 
+
+
+
+
+
+
+		<!-- latest adventures -->
 		<section class="latest-adventures container">
 			<h2>latest adventures</h2>
 			<div class="adventures container">
