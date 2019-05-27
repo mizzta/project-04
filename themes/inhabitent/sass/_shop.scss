@@ -1,0 +1,27 @@
+.post-type-archive-product {
+    .product-type {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+        margin-bottom: 1.5rem;
+ 
+        img {
+            height: 260px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .product-caategory .shop {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    // .entry-content {
+    //     display: none;
+    // }
+    // .entry-title {
+    //     display: none;
+    // }
+
+}

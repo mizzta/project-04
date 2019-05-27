@@ -18,8 +18,9 @@ get_header(); ?>
 		</section>
 
 		<!-- shop stuff -->
+		<h2>shop stuff</h2>
 		<section class="shop-stuff container">
-			<h2>shop stuff</h2>
+
 			<?php
 			$terms = get_terms(
 				array(
@@ -41,9 +42,9 @@ get_header(); ?>
 									?>" />
 						<p><?php echo $term->description; ?></p>
 						<p>
-							<button href="<?php echo get_term_link($term); ?>">
+							<a href="<?php echo get_term_link($term); ?>">
 								<?php echo $term->name; ?> Stuff
-							</button>
+							</a>
 						</p>
 					</li>
 
@@ -57,8 +58,8 @@ get_header(); ?>
 
 
 		<!-- inhabitent journal -->
+		<h2>Inhabitent Journal</h2>
 		<section class="fp-journal">
-			<h2>Inhabitent Journal</h2>
 			<!-- loop with posts -->
 			<div class="journal-section container">
 				<?php
@@ -79,7 +80,8 @@ get_header(); ?>
 						<?php the_post_thumbnail('large', $attr); ?>
 						<p><?php echo get_the_date(); ?> / <?php echo get_comments_number(); ?> Comments</p>
 						<h3><?php the_title(); ?></h3>
-						<button class="read-entry">READ ENTRY</button>
+						<a href="<?php echo get_permalink(); ?>" class="read-entry">READ ENTRY
+						</a>
 					</div>
 
 
@@ -95,35 +97,38 @@ get_header(); ?>
 
 
 		<!-- latest adventures -->
+		<h2>latest adventures</h2>
 		<section class="latest-adventures container">
-			<h2>latest adventures</h2>
+
 			<div class="adventures container">
 				<div class="adventures-1">
 					<a href="getting-back-to-nature-in-a-canoe">
 						<h3>getting back to nature in a canoe</h3>
-						<button class="read-more">read more</button>
+						<p class="read-more">read more</p>
 					</a>
 				</div>
 				<div class="adventures-2">
 					<a href="a-night-with-friends-at-the-beach">
 						<h3>a night with friends at the beach</h3>
-						<button class="read-more">read more</button>
+						<p class="read-more">read more</p>
 					</a>
 				</div>
 				<div class="adventures-3">
 					<a href="taking-in-the-view-at-big-mountain">
 						<h3>talking in the view at big mountain</h3>
-						<button class="read-more">read more</button>
+						<p class="read-more">read more</p>
 					</a>
 				</div>
 				<div class="adventures-4">
 					<a href="star-gazing-at-the-night-sky">
 						<h3>star-glazing at the night sky</h3>
-						<button class="read-more">read more</button>
+						<p class="read-more">read more</p>
 					</a>
 				</div>
 			</div>
-			<button class="more-adventure">more adventure</button>
+			<div class="adventure">
+				<a href="adventure" class="more-adventure">more adventure</a>
+			</div>
 		</section>
 
 

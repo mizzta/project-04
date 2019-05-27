@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+// header.php
+//front-page
+
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+    // padding-left: 60px;
+    .site-logo {
+      width: 50px;
+    }
+  
+    .main-navigation {
+      display: flex;
+      // justify-content: space-around;
+      margin-right: 0;
+      a {
+        font-weight: bold;
+      }
+      li {
+        padding-left: 25px;
+      }
+    }
+  
+    .site-description {
+      display: none;
+  
+    }
+  }
+
+
+
+
+
+    

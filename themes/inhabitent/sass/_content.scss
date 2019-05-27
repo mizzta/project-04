@@ -48,108 +48,36 @@
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Novecento Sans Web';
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+body {
+  font-family: 'Merriweather Web';
+  line-height: 1.75;
+  font-size: 16px;
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+  color: $color__link;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $color__link-visited;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px;
 }
 
-// header.php
-.site-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin: 0;
-  position: absolute;
-  z-index: 999;
-  // padding-left: 60px;
-  .site-logo {
-    width: 50px;
-  }
-
-  .main-navigation {
-    display: flex;
-    // justify-content: space-around;
-    margin-right: 0;
-    a {
-      font-weight: bold;
-    }
-    li {
-      padding-left: 25px;
-    }
-  }
-
-  .site-description {
-    display: none;
-
-  }
+.entry-title {
+  text-transform: uppercase;
 }
-
-/* footer */
-footer {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background: url('../.././assets/images/dark-wood.png');
-  background-size: cover;
-  background-repeat: repeat;
-  color: $color__text-footer;
-
-  h3 {
-    color: $color__footer-h3;
-  }
-
-  span {
-    text-transform: uppercase;
-  }
-
-  .company-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .footer-logo {
-      max-width: 300px;
-    }
-  }
-
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .social-media {
-      display: flex;
-
-      .fa-phone {
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  .copyright {
-    text-align: center;
-  }
-}
-
-// post
-//position
-.fullpage {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  .content {
-    max-width: 70%;
-    margin-left: auto;
-    padding-top: 80px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  aside {
-    max-width: 25%;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-

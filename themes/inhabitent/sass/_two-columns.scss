@@ -1,0 +1,26 @@
+
+.fullpage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+    .content-area {
+      max-width: 73%;
+      margin-left: auto;
+      padding-top: 80px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .sidebar {
+      max-width: 27%;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      ul {
+          margin: 0;
+          list-style: none;
+          padding-left: 0;
+      }
+    }
+  }
