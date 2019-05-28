@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area container">
 	<main id="main" class="site-main" role="main">
 
 		<?php while (have_posts()) : the_post(); ?>
@@ -38,6 +38,14 @@ get_header(); ?>
 							?>
 						</div><!-- .entry-content -->
 						<?php echo CFS()->get( 'product_price' );?>
+						
+
+						<div class="product-info">
+  <div class="product-title"><span>Title Hello</span></div>
+  <div class="product-price">$10</div>
+</div>
+
+
 
 
 			<footer class="entry-footer">
@@ -60,5 +68,5 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

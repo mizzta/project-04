@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
@@ -17,9 +18,11 @@ get_header(); ?>
 			<img class="white-circle-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-full.svg" />
 		</section>
 
+		<div class="container">
+
 		<!-- shop stuff -->
 		<h2>shop stuff</h2>
-		<section class="shop-stuff container">
+		<section class="shop-stuff">
 
 			<?php
 			$terms = get_terms(
@@ -61,7 +64,7 @@ get_header(); ?>
 		<h2>Inhabitent Journal</h2>
 		<section class="fp-journal">
 			<!-- loop with posts -->
-			<div class="journal-section container">
+			<div class="journal-section">
 				<?php
 				// this will be the get posts loop
 				// use your template tags inside the loop
@@ -126,7 +129,7 @@ get_header(); ?>
 					</a>
 				</div>
 			</div>
-			<div class="adventure">
+			<div class="adventure-button">
 				<a href="adventure" class="more-adventure">more adventure</a>
 			</div>
 		</section>
@@ -135,6 +138,6 @@ get_header(); ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
-
+</div><!-- .container -->
 
 <?php get_footer(); ?>

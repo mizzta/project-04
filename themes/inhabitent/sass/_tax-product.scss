@@ -1,0 +1,46 @@
+.tax-product-type{
+.tax-product {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+        // margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        background: pink;
+      
+  
+  
+      img {
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: 4px solid #e1e1e1;
+      }
+  
+      .product-wrapper {
+        border: 1px solid #e1e1e1;
+        margin-bottom: 0;
+        .type-product {
+        margin-bottom: 0;
+        }
+        .product-info {
+          width: 260px;
+          display: flex;
+          padding: 1rem;
+          justify-content: space-between;
+        }
+  
+        .title {
+          white-space: nowrap;
+      
+        }
+  
+        .dots {
+          flex-grow: 1;
+          overflow: hidden;
+          &::after {
+            content: '.........................................................';
+          }
+        }
+}
+}
+}

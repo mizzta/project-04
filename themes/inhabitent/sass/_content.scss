@@ -48,7 +48,12 @@
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Novecento Sans Web';
   text-align: center;
   font-size: 1.5rem;
@@ -64,20 +69,91 @@ body {
 
 a {
   text-decoration: none;
-  color: $color__link;
+  color: #248a83;
 }
-
-a:visited {
+a :visited {
   text-decoration: none;
-  color: $color__link-visited;
+  color: #248a83;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.content-area {
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  .day-of-week {
+    font-weight: bold;
+  }
 }
 
 .entry-title {
   text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.widgettitle,
+.widget-title {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.single {
+  .type-post {
+  // background: green;
+    .entry-header {
+      position: relative;
+    }
+      img {
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+      }
+      .entry-title {
+        position: absolute;
+        background: #248a83;
+        padding: 0.75rem 1.5rem;
+      }
+      h1 {
+        color: white;
+      }
+      .entry-meta {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+        background: #248a83;
+  
+      }
+  
+    
+  }
 }

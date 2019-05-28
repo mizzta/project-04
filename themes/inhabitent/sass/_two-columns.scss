@@ -1,26 +1,16 @@
-
-.fullpage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  
-    .content-area {
-      max-width: 73%;
-      margin-left: auto;
-      padding-top: 80px;
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-    .sidebar {
-      max-width: 27%;
-      margin-right: auto;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      ul {
-          margin: 0;
-          list-style: none;
-          padding-left: 0;
-      }
-    }
+.left-side {
+    width: 75%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1;
+    margin-right: 0;
   }
+  
+  .right-side {
+    width: 25%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  

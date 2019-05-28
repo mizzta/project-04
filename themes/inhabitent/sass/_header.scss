@@ -3,41 +3,46 @@
 --------------------------------------------------------------*/
 
 // header.php
-//front-page
 
 .site-header {
-    width: 100%;
+  width: 100%;
+
+  margin: 0;
+  position: absolute;
+  z-index: 999;
+  // padding-left: 60px;
+  border-bottom: 1px solid #e1e1e1;
+
+  .container {
     display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    margin: 0;
-    position: absolute;
-    z-index: 999;
-    // padding-left: 60px;
-    .site-logo {
-      width: 50px;
+    justify-content: space-between;
+    // align-content: center;
+  }
+
+  .site-logo {
+    width: 50px;
+  }
+
+  .main-navigation {
+    display: flex;
+    margin-right: 0;
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    a {
+      font-weight: bold;
     }
-  
-    .main-navigation {
-      display: flex;
-      // justify-content: space-around;
-      margin-right: 0;
-      a {
-        font-weight: bold;
-      }
-      li {
-        padding-left: 25px;
-      }
-    }
-  
-    .site-description {
-      display: none;
-  
+    li {
+      padding-left: 25px;
     }
   }
 
+  .site-description {
+    display: none;
+  }
 
-
-
-
-    
+  .search-submit {
+    background: none;
+    border: none;
+  }
+}

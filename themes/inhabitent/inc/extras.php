@@ -67,11 +67,6 @@ function hwl_home_pagesize( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
         return;
 
-    if ( is_home() ) {
-        // Display only 1 post for the original blog archive
-        $query->set( 'posts_per_page', 16 );
-        return;
-    }
 
 	if ( is_post_type_archive( 'product' ) ) {
 		$query->set( 'posts_per_page', 16 );
@@ -79,4 +74,14 @@ function hwl_home_pagesize( $query ) {
 	
     }
 }
-add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
+add_action( 'pre_get_posts', 'hwl_home_pagesize' );
+
+
+function shop_archive_title($title)
+{
+   if (is_post_type_archive('product')) {
+       $title = 'Shop Stuff';
+   }
+   return $title;
+}
+add_filter('get_the_archive_title', 'shop_archive_title');
