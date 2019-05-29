@@ -56,22 +56,22 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while (have_posts()) : the_post(); ?>
 					<div class="product-wrapper">
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<header class="product-header">
-							<?php if (has_post_thumbnail()) : ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('large'); ?>
-								</a>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<header class="product-header">
+								<?php if (has_post_thumbnail()) : ?>
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail('large'); ?>
+									</a>
 
-							<?php endif; ?>
-						</header><!-- .entry-header -->
+								<?php endif; ?>
+							</header><!-- .entry-header -->
 
-						<div class="product-info">
-							<div class="title"><?php the_title() ?></div>
-							<div class="dots"></div>
-							<div class="price"><?php echo CFS()->get('product_price'); ?></div>
-						</div>
-					</article><!-- #post-## -->
+							<div class="product-info">
+								<div class="title"><?php the_title() ?></div>
+								<div class="dots"></div>
+								<div class="price"><?php echo CFS()->get('product_price'); ?></div>
+							</div>
+						</article><!-- #post-## -->
 					</div>
 				<?php endwhile; ?>
 

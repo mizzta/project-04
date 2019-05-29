@@ -1239,12 +1239,28 @@ hr {
       .post-type-archive-product .content-area .product-wrapper .dots::after {
         content: '.........................................................'; }
 
+.tax-product-type .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 1rem; }
+  .tax-product-type .page-header .tax-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+
 .tax-product-type .tax-product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
-  margin-top: 3rem;
-  background: pink; }
+  margin-top: 3rem; }
   .tax-product-type .tax-product img {
     height: 260px;
     width: 100%;
@@ -1274,3 +1290,36 @@ hr {
       overflow: hidden; }
       .tax-product-type .tax-product .product-wrapper .dots::after {
         content: '.........................................................'; }
+
+.single-product .single-product-detail {
+  margin-top: 5rem; }
+  .single-product .single-product-detail .image-and-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .single-product .single-product-detail .image-and-details .product-image img {
+      max-width: 90%; }
+    .single-product .single-product-detail .image-and-details .product-details {
+      max-width: 50%; }
+      .single-product .single-product-detail .image-and-details .product-details h1.entry-title {
+        text-align: left;
+        color: #d99054; }
+      .single-product .single-product-detail .image-and-details .product-details .product-price {
+        font-family: Novecento Sans Web, sans-serif;
+        font-size: 1.8rem; }
+      .single-product .single-product-detail .image-and-details .product-details .social-media {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .single-product .single-product-detail .image-and-details .product-details .social-media .social-btn {
+          border: 1px solid black;
+          padding: 0.5rem 2rem;
+          margin-right: 0.75rem; }

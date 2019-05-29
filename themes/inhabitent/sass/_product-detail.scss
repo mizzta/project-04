@@ -1,0 +1,37 @@
+.single-product {
+  .single-product-detail {
+    margin-top: 5rem;
+    // display: flex;
+    // flex-direction: row;
+    .image-and-details {
+      display: flex;
+      flex-direction: row;
+
+      .product-image {
+        img {
+          max-width: 90%;
+        }
+      }
+      .product-details {
+        max-width: 50%;
+        h1.entry-title {
+          text-align: left;
+          color: #d99054;
+        }
+        .product-price {
+          font-family: Novecento Sans Web, sans-serif;
+          font-size: 1.8rem;
+        }
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            .social-btn {
+                border: 1px solid black;
+                padding: 0.5rem 2rem;
+                margin-right: 0.75rem;
+            }
+        }
+      }
+    }
+  }
+}
