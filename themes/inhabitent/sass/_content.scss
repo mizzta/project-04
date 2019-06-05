@@ -5,155 +5,46 @@
 /* Posts and pages */
 
 .sticky {
-  display: block;
+	display: block;
 }
 
 .hentry {
-  margin: 0 0 $base__space-unit;
+	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published) {
-  display: none;
+.updated:not(.published){
+	display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-  display: inline;
+	display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: $base__space-unit 0 0;
+	margin: $base__space-unit 0 0;
 }
 
 .page-links {
-  clear: both;
-  margin: 0 0 $base__space-unit;
+	clear: both;
+	margin: 0 0 $base__space-unit;
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-  display: none;
+	display: none;
 }
 
 /* Comments */
 
 .comment-content a {
-  word-wrap: break-word;
+	word-wrap: break-word;
 }
 .bypostauthor {
-  display: block;
+	display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Novecento Sans Web';
-  text-align: center;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-}
-
-body {
-  font-family: 'Merriweather Web';
-  line-height: 1.75;
-  font-size: 16px;
-  color: #404040;
-}
-
-a {
-  text-decoration: none;
-  color: #248a83;
-}
-a :visited {
-  text-decoration: none;
-  color: #248a83;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1120px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.site-content {
-  flex-grow: 1;
-  display: flex;
-}
-
-.content-area {
-
-  h2 {
-    font-size: 1.4rem;
-  }
-  .day-of-week {
-    font-weight: bold;
-  }
-}
-
-.entry-title {
-  text-transform: uppercase;
-}
-
-ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 0;
-}
-
-.widgettitle,
-.widget-title {
-  text-align: left;
-}
-
-h1 {
-  font-size: 2.4rem;
-}
-
-.single {
-  .type-post {
-  // background: green;
-    .entry-header {
-      position: relative;
-    }
-      img {
-        text-align: center;
-        object-fit: cover;
-        width: 100%;
-      }
-      .entry-title {
-        position: absolute;
-        background: #248a83;
-        padding: 0.75rem 1.5rem;
-      }
-      h1 {
-        color: white;
-      }
-      .entry-meta {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: white;
-        background: #248a83;
-  
-      }
-  
-    
-  }
-}

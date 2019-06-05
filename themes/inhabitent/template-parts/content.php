@@ -2,13 +2,10 @@
 /**
  * Template part for displaying posts.
  *
- * @package Inhabitent_Theme
+ * @package Inhabitent_New_Theme
  */
 
 ?>
-
-
-<!-- -------------------------------------- -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -27,8 +24,5 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-
 	</div><!-- .entry-content -->
-
 </article><!-- #post-## -->
-

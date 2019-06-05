@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent
+Theme Name: Inhabitent New Theme
 Theme URI: http://underscores.me/
 Author: Rita
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A starter theme for Inhabitent.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,11 +63,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-@import "two-columns";
 @import "header";
 @import "footer";
-@import "adventure";
-@import "blog";
+@import "front";
 @import "shop";
-@import "tax-product";
+@import "blog";
+@import "two-columns";
+@import "tax-products";
 @import "product-detail";
+@import "adventure";

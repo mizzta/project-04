@@ -1,8 +1,14 @@
 .single-product {
+  .logos {
+    .site-logo {
+      display: unset;
+    }
+    .site-logo-white {
+      display: none;
+    }
+  }
   .single-product-detail {
     margin-top: 5rem;
-    // display: flex;
-    // flex-direction: row;
     .image-and-details {
       display: flex;
       flex-direction: row;
@@ -23,13 +29,13 @@
           font-size: 1.8rem;
         }
         .social-media {
-            display: flex;
-            flex-direction: row;
-            .social-btn {
-                border: 1px solid black;
-                padding: 0.5rem 2rem;
-                margin-right: 0.75rem;
-            }
+          display: flex;
+          flex-direction: row;
+          .social-btn {
+            border: 1px solid black;
+            padding: 0.5rem 2rem;
+            margin-right: 0.75rem;
+          }
         }
       }
     }

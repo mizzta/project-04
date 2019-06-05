@@ -16,3 +16,26 @@
 	display: none;
 }
 
+
+.widget-area {
+	a {
+	  color: #248a83;
+	  text-decoration: none;
+	}
+	a:hover {
+	  color: rgb(104, 3, 104);
+	}
+	ul {
+	  list-style: none;
+	  padding-left: 0;
+	  margin-left: 0;
+	}
+	.day-of-week {
+	  font-weight: bold;
+	}
+	h2 {
+		font-family: "Novecento Sans Web",sans-serif;
+		letter-spacing: 2px;
+	}
+  }
+  

@@ -7,7 +7,8 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div class="two-columns container">
+<div id="primary" class="content-area left-side">
 	<main id="main" class="site-main" role="main">
 
 			<?php while (have_posts()) : the_post(); ?>
@@ -19,5 +20,12 @@ get_header(); ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
+
+<div class="right-side">
+        <?php get_sidebar(); ?>
+    </div> <!-- .right-side -->
+</div> <!-- .two-columns -->
+
+
 
 <?php get_footer(); ?>

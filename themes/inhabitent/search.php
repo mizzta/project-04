@@ -2,12 +2,12 @@
 /**
  * The template for displaying search results pages.
  *
- * @package Inhabitent_Theme
+ * @package Inhabitent_New_Theme
  */
 
 get_header(); ?>
-
-	<section id="primary" class="content-area container">
+<div class="two-columns container">
+	<section id="primary" class="content-area left-side">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -20,8 +20,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+				<div class="journal-readmore"> <a href="<?php the_permalink(); ?>">read more → </a></div>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
 			<?php inhabitent_numbered_pagination(); ?>
 
@@ -34,5 +35,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+	<div class="right-side">
+		<?php get_sidebar(); ?>
+	</div>
+
+</div><!-- .two-columns -->
 <?php get_footer(); ?>

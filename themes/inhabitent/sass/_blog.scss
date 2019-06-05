@@ -1,5 +1,12 @@
 .blog {
-
+  .logos {
+    .site-logo {
+      display: unset;
+    }
+    .site-logo-white {
+      display: none;
+    }
+  }
   .entry-header {
     position: relative;
   }
@@ -13,19 +20,27 @@
       position: absolute;
       background: #248a83;
       padding: 0.75rem 1.5rem;
+      left: 0;
+      max-width: 75%;
+      font-size: 2.2rem;
+      font-family: 'Novecento Sans Web', sans-serif;
       a {
         color: white;
       }
     }
+    .entry-title:hover {
+      a {
+        color: ivory;
+      }
+    }
+
     .entry-meta {
       position: absolute;
       bottom: 0;
       right: 0;
       color: white;
       background: #248a83;
-
     }
-
   }
   .journal-readmore {
     border: 1px solid #000;
@@ -39,5 +54,13 @@
       color: #000;
     }
   }
-       // margin-bottom: 4.5rem;
+
+  .journal-readmore:hover {
+    background: #248a83;
+    border: none;
+    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+  }
 }

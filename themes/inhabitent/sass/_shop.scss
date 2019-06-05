@@ -1,6 +1,20 @@
 .post-type-archive-product {
+  .logos {
+    .site-logo {
+      display: unset;
+    }
+    .site-logo-white {
+      display: none;
+    }
+  }
   .page-header {
     display: unset;
+    .page-title {
+      text-align: center;
+    }
+    .tax-description {
+      margin: 0;
+    }
   }
   .content-area {
     width: 100%;
@@ -27,7 +41,6 @@
       margin-top: 3rem;
     }
 
-
     img {
       height: 260px;
       width: 100%;
@@ -39,7 +52,7 @@
       border: 1px solid #e1e1e1;
       margin-bottom: 0;
       .type-product {
-      margin-bottom: 0;
+        margin-bottom: 0;
       }
       .product-info {
         width: 260px;
@@ -50,7 +63,6 @@
 
       .title {
         white-space: nowrap;
-    
       }
 
       .dots {

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package Inhabitent_Theme
+ * @package Inhabitent_New_Theme
  */
 
 ?>

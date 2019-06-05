@@ -1,16 +1,25 @@
-.left-side {
-    width: 75%;
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  .left-side {
+    grid-column: 1/4;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1;
     margin-right: 0;
   }
-  
+
   .right-side {
-    width: 25%;
+    grid-column: 4/5;
     margin-left: 3rem;
     margin-top: 3rem;
     font-size: 0.9rem;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
   }
-  
+}
+

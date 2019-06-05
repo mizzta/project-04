@@ -19,27 +19,27 @@ get_header(); ?>
 		<h2><span>LATEST ADVENTURES</span></h2>
 		<hr>
 
-		<section class="latest-adventures page-id-178 container">
-			<div class="adventures-page page-id-178 container">
-				<div class="adventures-1 page-id-178">
+		<section class="latest-adventures container">
+			<div class="adventures-page container">
+				<div class="adventures-1">
 					<a href="getting-back-to-nature-in-a-canoe">
 						<h3>getting back to nature in a canoe</h3>
 						<p class="read-more">read more</p>
 					</a>
 				</div>
-				<div class="adventures-2 page-id-178">
+				<div class="adventures-2">
 					<a href="a-night-with-friends-at-the-beach">
 						<h3>a night with friends at the beach</h3>
 						<p class="read-more">read more</p>
 					</a>
 				</div>
-				<div class="adventures-3 page-id-178">
+				<div class="adventures-3">
 					<a href="taking-in-the-view-at-big-mountain">
 						<h3>talking in the view at big mountain</h3>
 						<p class="read-more">read more</p>
 					</a>
 				</div>
-				<div class="adventures-4 page-id-178">
+				<div class="adventures-4">
 					<a href="star-gazing-at-the-night-sky">
 						<h3>star-glazing at the night sky</h3>
 						<p class="read-more">read more</p>

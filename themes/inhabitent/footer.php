@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package Inhabitent_Theme
+ * @package Inhabitent_New_Theme
  */
 
 ?>
@@ -18,8 +18,8 @@
 				<a href="info@inhabitent.com">info@inhabitent.com</a>
 			</p>
 			<p class="phone">
-					<i class="fas fa-phone"></i>
-					<a href="tel:778-456-7891">778-456-7891</a>
+				<i class="fas fa-phone"></i>
+				<a href="tel:778-456-7891">778-456-7891</a>
 			</p>
 			<p>
 				<i class="fab fa-facebook-square"></i>

@@ -2,8 +2,9 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Inhabitent_Theme
+ * @package Inhabitent_New_Theme
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
+			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -30,6 +31,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php inhabitent_entry_footer(); ?>
+		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

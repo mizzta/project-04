@@ -6,10 +6,8 @@
 
 a {
 	color: $color__link;
-	text-decoration: none;
 	&:visited {
-		color: $color__link-list;
-		text-decoration: none;
+		color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
@@ -31,7 +29,7 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	// width: 100%;
+	width: 100%;
 
 	ul {
 		display: none;

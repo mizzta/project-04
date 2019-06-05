@@ -1,5 +1,6 @@
-(function($) {
-
+// IIFE immeditaley envoked function expression
+(function ($) {
+    $(function () {
     // alert('hello');
     // // all of your code goes
     // $('body').append('hello world');
@@ -22,7 +23,7 @@
         });
     //   });
 
-
+});//end of doc ready
     
 }) (jQuery); //end of js file
 
