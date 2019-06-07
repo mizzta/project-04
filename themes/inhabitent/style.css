@@ -739,6 +739,15 @@ object {
 .page-about header {
   position: absolute; }
 
+.page-about .container .main-navigation fieldset i {
+  color: #fff; }
+
+.page-about .main-navigation a {
+  color: white; }
+
+.page-about .main-navigation a:hover {
+  color: ivory; }
+
 .page-about .hero-image-header {
   height: 900px;
   width: 100vw;
@@ -812,6 +821,54 @@ object {
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto; }
+
+.archive .entry-header {
+  position: relative; }
+
+.archive article.hentry img {
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%; }
+
+.archive article.hentry .entry-title {
+  position: absolute;
+  background: #248a83;
+  padding: 0.75rem 1.5rem;
+  left: 0;
+  max-width: 75%;
+  font-size: 2.2rem;
+  font-family: 'Novecento Sans Web', sans-serif; }
+  .archive article.hentry .entry-title a {
+    color: white; }
+
+.archive article.hentry .entry-title:hover a {
+  color: ivory; }
+
+.archive article.hentry .entry-meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: #248a83; }
+
+.archive .journal-readmore {
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  width: 160px; }
+  .archive .journal-readmore a {
+    color: #000; }
+
+.archive .journal-readmore:hover {
+  background: #248a83;
+  border: none;
+  color: #ffffff; }
+  .archive .journal-readmore:hover a {
+    color: #ffffff; }
 
 a {
   text-decoration: none;
@@ -967,6 +1024,8 @@ h2 {
   position: absolute;
   margin-left: auto;
   margin-right: auto; }
+  .home .site-header .container .main-navigation fieldset i {
+    color: #fff; }
 
 .home .main-navigation a {
   color: white; }
@@ -1368,6 +1427,9 @@ h2 {
 .page-adventure .logos .site-logo-white {
   display: none; }
 
+.page-adventure fieldset i {
+  color: #248a83; }
+
 .page-adventure hr {
   border: 1px dashed #c8c8c8; }
 
@@ -1429,3 +1491,60 @@ h2 {
   color: #fff;
   border: 1px solid white;
   padding: 0.75rem; }
+
+.single-post .logos .site-logo {
+  display: unset; }
+
+.single-post .logos .site-logo-white {
+  display: none; }
+
+.single-post .entry-header {
+  position: relative; }
+
+.single-post article.hentry img {
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%; }
+
+.single-post article.hentry .entry-title {
+  position: absolute;
+  background: #248a83;
+  padding: 0.75rem 1.5rem;
+  left: 0;
+  max-width: 75%;
+  font-size: 2.2rem;
+  font-family: 'Novecento Sans Web', sans-serif;
+  color: white; }
+
+.single-post article.hentry .entry-meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: #248a83; }
+  .single-post article.hentry .entry-meta a {
+    color: #ffffff; }
+    .single-post article.hentry .entry-meta a:hover {
+      color: #ffffff; }
+
+.single-post .journal-readmore {
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  width: 160px; }
+  .single-post .journal-readmore a {
+    color: #000; }
+
+.single-post .journal-readmore:hover {
+  background: #248a83;
+  border: none;
+  color: #ffffff; }
+  .single-post .journal-readmore:hover a {
+    color: #ffffff; }
+
+.single-post .entry-footer {
+  display: none; }

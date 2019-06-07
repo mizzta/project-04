@@ -7,7 +7,6 @@ header {
 }
 
 h2 {
-
   text-transform: uppercase;
 }
 
@@ -16,12 +15,21 @@ h2 {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
+    .container {
+      .main-navigation {
+        fieldset {
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
   }
 
   .main-navigation a {
     color: white;
   }
-  
+
   .main-navigation a:hover {
     color: ivory;
   }
@@ -195,7 +203,6 @@ h2 {
   .title-meta-background {
     .feature-image {
       position: relative;
-
     }
     .post-title {
       position: absolute;
